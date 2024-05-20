@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico">
+    <script src="script.js"></script>
+    <title>Metro Bolts Website</title>
+</head>
+
+<body>
+    <!-- Nav menu -->
+    <nav>
+        <ul>
+            <li><a href="">Metro Bolts</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href=""><img src="/images/cart_icon.png" alt="Cart icon"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Carousel -->
+    <header>
+        <div class="carousel-item">
+            <picture>
+                <img loading="lazy" decoding="async" src="/images/bolts_store.webp"
+                    alt="A variety of bolts being sold at Metro Bolts" width="1920" height="1200" aria-hidden="true">
+            </picture>
+            <h1>Welcome to Metro Bolts</h1>
+            <h2>Enhance your projects with our high-quality products!</h2>
+            <a href="" class="button">Shop Now</a>
+        </div>
+
+        <div class="carousel-item">
+            <picture>
+                <img loading="lazy" decoding="async" src="/images/bolts_background.webp" alt="A large pile of bolts"
+                    width="1920" height="1200" aria-hidden="true">
+            </picture>
+            <h1>$10 Welcome Voucher</h1>
+            <h2>For your first purchase at Metro Bolts!</h2>
+            <a href="" class="button">Shop Now</a>
+        </div>
+
+        <div class="carousel-item">
+            <picture>
+                <img loading="lazy" decoding="async" src="/images/fasteners_store.webp"
+                    alt="Large collection of fasteners being sold at Metro Bolts" width="1920" height="1200" aria-hidden="true">
+            </picture>
+            <h1>Spend over $30 = Get 15% Discount</h1>
+            <h2>Eligible all June!</h2>
+            <a href="" class="button">Shop Now</a>
+        </div>
+
+        <a class="prev" onclick="nextImage(-1)">&#10094;</a>
+        <a class="next" onclick="nextImage(1)">&#10095;</a>
+
+        <div class="dots">
+            <span class="dot active" onclick="currentImage(1)"></span>
+            <span class="dot" onclick="currentImage(2)"></span>
+            <span class="dot" onclick="currentImage(3)"></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Products -->
+        <section>
+            <div class="products-section">
+                <h2>Our Products</h2>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <img loading="lazy" decoding="async" src="/images/bolts.webp"
+                                alt="Bolts on sale at Metro Bolts" width="630" height="354">
+                        </picture>
+                        <a href="" class="button">Bolts</a>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <img loading="lazy" decoding="async" src="/images/rivets.webp" alt="Rivets on sale at Metro Bolts"
+                                width="630" height="354">
+                        </picture>
+                        <a href="" class="button">Rivets</a>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <img loading="lazy" decoding="async" src="/images/fasteners.webp" alt="Fasteners on sale at Metro Bolts"
+                                width="630" height="354">
+                        </picture>
+                        <a href="" class="button">Fasteners</a>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <img loading="lazy" decoding="async" src="/images/nuts.webp" alt="Nuts on sale at Metro Bolts" width="630"
+                                height="354">
+                        </picture>
+                        <a href="" class="button">Nuts</a>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <img loading="lazy" decoding="async" src="/images/pins.webp" alt="Pins on sale at Metro Bolts" width="630"
+                                height="354">
+                        </picture>
+                        <a href="" class="button">Pins</a>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-background">->
+                            <img loading="lazy" decoding="async" src="/images/screws.webp" alt="Screws on sale at Metro Bolts"
+                                width="630" height="354">
+                        </picture>
+                        <a href="" class="button">Screws</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section>
+            <div class="testimonials-section">
+                <h2>Our Customers' Testimonials</h2>
+                <div class="cs-container">
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/images/happy-man.webp"
+                                    alt="YouTuber Callan White being happy" width="240" height="300">
+                            </picture>
+                            <div class="cs-info">
+                                <div class="cs-review">
+                                    <img class="cs-stars" aria-hidden="true" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg"
+                                        alt="stars" width="150">
+                                    <br>
+                                    <p>
+                                        &#x275DMy YouTube videos wouldn't have been possible without Metro Bolts' high
+                                        quality products!&#x275E
+                                    </p>
+                                    <br>
+                                    <span class="cs-name">CALLAN WHITE</span>
+                                    <span class="cs-desc">YouTuber</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/images/happy-woman.webp"
+                                    alt="Influencer Jane Ross smiling" width="240" height="300">
+                            </picture>
+                            <div class="cs-info">
+                                <div class="cs-review">
+                                    <img class="cs-stars" aria-hidden="true" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg"
+                                        alt="stars" width="150">
+                                    <br>
+                                    <p>
+                                        &#x275DMetro Bolts' products has been pivotal in building our backyard tree
+                                        house. My kids absolutely love it!&#x275E
+                                    </p>
+                                    <br>
+                                    <span class="cs-name">JANE ROSS</span>
+                                    <span class="cs-desc">Social Media Influencer</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About us -->
+        <section>
+            <div class="about-find-section">
+                <h2>About Us</h2>
+                <div class="cs-container">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <img loading="lazy" decoding="async" src="/images/happy-workers.webp"
+                                alt="Two Metro Bolts workers smiling">
+                        </picture>
+                    </div>
+                    <div class="cs-content">
+                        <h3><span style="color: #6ba7e8; font-size: 32px;">&#x275D</span> Small Enough to
+                            Care &#8211; Big Enough to
+                            Cope <span style="color: #6ba7e8; font-size: 32px;">&#x275E</span></h3>
+                        <p>
+                            Metro Bolts is a privately owned Australian company that has been successfully supplying
+                            fasteners for almost sixty years.
+                        </p>
+                        <p>
+                            Originally established just after the Second World War as Motor Bolts Pty Ltd in Hawthorn,
+                            the business became more successful, requiring larger premises. The shift was made to 323,
+                            and then to 327-329 Swan Street.
+                        </p>
+                        <a href="" class="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find us -->
+        <section>
+            <div class="about-find-section">
+                <h2>Find Us</h2>
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <h3>Store Hours</h3>
+                        <div class="opening-hours">
+                            <div class="weekdays">
+                                <p>
+                                    Monday<br>
+                                    Tueday<br>
+                                    Wednesday<br>
+                                    Thursday<br>
+                                    Friday<br>
+                                    Saturday<br>
+                                    Sunday
+                                </p>
+                            </div>
+
+                            <div class="hours">
+                                <p>
+                                    8:00 AM - 5:00 PM<br>
+                                    8:00 AM - 5:00 PM<br>
+                                    8:00 AM - 5:00 PM<br>
+                                    8:00 AM - 5:00 PM<br>
+                                    8:00 AM - 5:00 PM<br>
+                                    Closed<br>
+                                    Closed
+                                </p>
+                            </div>
+                        </div>
+                        <a href="" class="button">Contact Us</a>
+                    </div>
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.4150277207855!2d145.1381390827125!3d-37.92073366781481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642f54e820f49%3A0x33c90b52fb6573dc!2sMetro%20Bolts!5e0!3m2!1sen!2sus!4v1714876779676!5m2!1sen!2sus"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="cs-container">
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async"
+                        src="/images/metro-bolts-logo.png" alt="Metro bolts logo">
+                </a>
+                <h3>
+                    Get Social with Metro Bolts
+                </h3>
+                <ul class="social-media-icons">
+                    <li><a href=""><img src="/images/facebook.png" alt="Facebook icon"></a></li>
+                    <li><a href=""><img src="/images/instagram.png" alt="Instagram icon"></a></li>
+                    <li><a href=""><img src="/images/twitter.png" alt="X (formerly Twitter) icon"></a></li>
+                    <li><a href=""><img src="/images/youtube.png" alt="YouTube icon"></a></li>
+                </ul>
+            </div>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <h3 class="cs-header">CUSTOMER HELP</h3>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">FAQ</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Delivery</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Exchanges</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Returns</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <h3 class="cs-header">PAYMENT</h3>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Apple Pay</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Afterpay</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Paypal</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Gift Cards</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <h3 class="cs-header">ABOUT METRO BOLTS</h3>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">About Us</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Our History</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Our Team</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <h3 class="cs-header">LEGAL</h3>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Privacy Policy</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Terms & Conditions</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-copyright">&copy; 2024 Metro Bolts. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
